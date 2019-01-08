@@ -94,6 +94,15 @@ const makeRequest = async () => {
 ```
 
 [为什么await强于Promise](https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9)
+
+### NodeJs异步终极选择
+- 只要能用，就用async-await
+- callback可以用NodeJS内置的 [util.promisify](https://nodejs.org/api/util.html#util_util_promisify_original) 转成Promise
+- 每个async函数其实就是Promise
+- 所有Promise都可以使用async-await语法
+- Promise.all适用多个一起跑，等全跑完再做事情的场景
+- Promise.race适用多个一起跑，第一个跑完就做事情的场景
+
 ## 最简单快速的实现静态文件服务器
 
 ## 万能的ExpressJs
