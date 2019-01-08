@@ -56,7 +56,7 @@
 
 ### NodeJs中的Promise - 很像叠罗汉
 - 俄罗斯套娃很有趣，可是业务场景稍微复杂一点，一般来说超过5层套娃，就较难维护了
-- 于是产生了Promise,这个才是叠罗汉
+- 于是产生了Promise,这个是叠罗汉
 ```
 Promise.call(A)
   .then(B)
@@ -71,8 +71,25 @@ Promise可以轻松解决套娃面临的1-2-3-4问题，可是对真实的业务
 2. 每片的值只能传递，无法共享 - 这个就严重限制了它的使用空间，同时也造成代码冗余
 3. 只有一个尾部异常处理 - 较难满足多异常分情况处理的真实场景
 ```
-### NodeJs中的Async-Await - 程序员要的真正的乐高积木
 
+- [NodeJs内置的回调转Promise函数](https://nodejs.org/api/util.html#util_util_promisify_original)
+- [Promise.all](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+### NodeJs中的Async-Await - 程序员要的真正的乐高积木
+- 叠罗汉超过10层之后，也会相对较难维护 - 它也有点像烤串，串多了，沉重啊，想中间扯下一块来，太困难
+- async-await 相怎么搭，就怎么搭
+
+```
+const makeRequest = async () => {
+  await callAPromise()
+  await callAPromise()
+  await callAPromise()
+  await callAPromise()
+  await callAPromise()
+  throw new Error("oops");
+}
+```
+
+[为什么await强于Promise](https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9)
 ## 最简单快速的实现静态文件服务器
 
 ## 万能的ExpressJs
