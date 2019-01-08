@@ -29,6 +29,7 @@
 - 假设一个起床上班的场景流程：1.先穿衣服(3min) 2.打开音乐(1min) 3.刷牙并同时听音乐(2-5min) 4.刷牙结束并且音乐结束后，开始吃饭(10min) 5.吃饭结束上班走人，如果时间到8点了没吃完也得走人
 
 ### NodeJs回调地狱Callback - 很像俄罗斯套娃
+- <img src="http://img1.imgtn.bdimg.com/it/u=2315008620,1057703947&fm=26&gp=0.jpg">
 - 根本上讲，程序员的代码决定了NodeJs更快，还是更卡
 ```
 1 用传统编程语言的思维，相当然的认为完这一步，执行下一步，再下一步，最终会导致程序卡卡卡，卡死没反应
@@ -54,7 +55,9 @@
 4. 真实场景，还有经常有if-else这样的分支逻辑 - 而回调只能处理简单的自上而下的调用关系
 ```
 
-### NodeJs中的Promise - 很像叠罗汉
+### NodeJs中的Promise - 很像穿烤串,叠罗汉
+- <img src="http://img4.imgtn.bdimg.com/it/u=1381155273,3299736935&fm=26&gp=0.jpg">
+- <img src="http://img2.imgtn.bdimg.com/it/u=2102831932,2133482770&fm=26&gp=0.jpg">
 - 俄罗斯套娃很有趣，可是业务场景稍微复杂一点，一般来说超过5层套娃，就较难维护了
 - 于是产生了Promise,这个是叠罗汉
 ```
@@ -76,7 +79,8 @@ Promise可以轻松解决套娃面临的1-2-3-4问题，可是对真实的业务
 - [Promise.all](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
 ### NodeJs中的Async-Await - 程序员要的真正的乐高积木
 - 叠罗汉超过10层之后，也会相对较难维护 - 它也有点像烤串，串多了，沉重啊，想中间扯下一块来，太困难
-- async-await 相怎么搭，就怎么搭
+- async-await 想怎么搭，就怎么搭
+- <img src="http://img3.imgtn.bdimg.com/it/u=3697583541,1964000182&fm=26&gp=0.jpg">
 
 ```
 const makeRequest = async () => {
