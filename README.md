@@ -104,10 +104,24 @@ const makeRequest = async () => {
 - Promise.race适用多个一起跑，第一个跑完就做事情的场景
 
 ## 最简单快速的实现静态文件服务器
+- [serve](https://www.npmjs.com/package/serve)
+- [serve-static](https://www.npmjs.com/package/serve-static)
+- [static-serve](https://www.npmjs.com/package/static-serve)
 
 ## 万能的ExpressJs
+- [expressjs](https://expressjs.com/)
+- Fast, unopinionated, minimalist web framework for node
+- Best/Fatest for normal web sites
+- Best/Fatest for SAP sites
+- Best/Fatest for API/Rest projects
 
 ## 桌面神器ElectronJs
+- [electronjs](https://electronjs.org/)
+- Atom, Skype, Visual Studio Code, Github
+- 跨平台的万能浏览器
+- 跨平台的万能UI套装
+- Web写法，原生体验
+- 可以调用电脑上的所有资源，比如文件，数据库，执行命令行等
 
 ## 百花齐放的Javascript
 
